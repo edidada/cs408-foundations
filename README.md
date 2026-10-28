@@ -46,7 +46,7 @@
 
 ## 目录索引（每科 5 个维度）
 
-每个科目文件夹下都有 5 个文件：**学习计划 / 知识点 / 重难点 / 实践规划 / 检测**（当前阶段不涉及代码，实践规划均为思路描述）。
+每个科目文件夹下都有 5 个文件：**学习计划 / 知识点 / 重难点 / 实践规划 / 检测**。实践规划里的代码实验统一放在 external/ 下的 submodule 仓库中（见下方「外部代码仓库」），不污染主仓库。
 
 - 数据结构 datastructure/
   - [学习计划](./datastructure/学习计划.md)
@@ -85,6 +85,19 @@
 > 每门课的自测细节见对应文件夹的「检测.md」。
 
 ---
+
+## 外部代码仓库（git submodule）
+
+代码实验不写进主仓库，而是以 submodule 形式引用成熟的开源实验仓库，便于「借别人的实现验证自己的理解」：
+
+| 路径 | 仓库 | 对应实验 |
+|------|------|----------|
+| external/csapp-labs | lorendw7/CSAPP-Labs | 组成原理：05-cache-lab（Cache 局部性/模拟器）；操作系统：06-shell-lab、07-malloc-lab |
+| external/408-ds-os-code | Skybluebluede/408-DataStructure-and-OperatingSystem | 数据结构 + 操作系统 408 代码实现与真题 |
+| external/os-producer-consumer | Kojavoh/OS-Lab-1 | 操作系统：pthread + 信号量生产者-消费者 |
+
+> 克隆本仓库后如需拉取子模块：git submodule update --init --recursive
+> 各科目「实践规划.md」末尾都有「代码实验（外部仓库，submodule）」小节，指明用哪个仓库的哪一部分。
 
 ## 时间预期与心态
 

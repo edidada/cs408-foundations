@@ -1,0 +1,9 @@
+[submodule "external/csapp-labs"]
+	path = external/csapp-labs
+	url = https://github.com/lorendw7/CSAPP-Labs
+[submodule "external/408-ds-os-code"]
+	path = external/408-ds-os-code
+	url = https://github.com/Skybluebluede/408-DataStructure-and-OperatingSystem
+[submodule "external/os-producer-consumer"]
+	path = external/os-producer-consumer
+	url = https://github.com/Kojavoh/OS-Lab-1
